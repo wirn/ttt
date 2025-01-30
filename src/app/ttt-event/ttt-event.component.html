@@ -9,13 +9,13 @@
       <p class="card-text">
         {{ event.topic }}
       </p>
-      <p>
-        <i>{{ event.date | date : "yy-MM-dd" }}</i>
+      <p class="text-subtle">
+        {{ event.date | date : "yy-MM-dd" }}
       </p>
-      <p>
-        <i>{{ event.note }}</i>
+      <p class="text-subtle">
+        {{ event.note }}
       </p>
     </div>
   </div>
 </div>
-<i>{{ tttEvents.length }}</i>
+<p class="text-subtle">Antal: {{ tttEvents.length }}</p>

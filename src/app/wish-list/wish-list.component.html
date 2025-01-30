@@ -1,0 +1,8 @@
+<div *ngFor="let group of sortedGroups">
+  <h2>{{ group.date }}</h2>
+  <ul>
+    <li *ngFor="let wish of group.wishes">
+      {{ wish.name }}
+    </li>
+  </ul>
+</div>

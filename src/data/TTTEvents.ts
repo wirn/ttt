@@ -5,7 +5,7 @@ export const events: TTTEvent[] = [
   {
     heldBy: colleagues['Anna Söderström'],
     topic: 'CPMAI Certifiering',
-    date: null,
+    date: new Date('2025-02-13'),
   },
   {
     heldBy: colleagues['Anna Söderström'],
