@@ -14,7 +14,11 @@ export const wish: Wish[] = [
     date: new Date('2025-01-28'),
   },
   { name: 'Pyton – vad fn är det?', date: new Date('2025-01-28') },
-  { name: 'Säkerhet för utv, någon gäst?', date: new Date('2025-01-28') },
+  {
+    name: 'Säkerhet för utv',
+    date: new Date('2025-01-28'),
+    note: 'någon gäst?',
+  },
   {
     name: 'Rundabordsdiskussion om hur vi använder AI som utvecklare',
     date: new Date('2025-01-28'),
