@@ -3,6 +3,26 @@ import { colleagues } from './Colleagues';
 
 export const events: TTTEvent[] = [
   {
+    heldBy: colleagues['Imtiaz Akhtar'],
+    topic: 'Infrastructure as Code',
+    date: new Date('2025-04-10'),
+  },
+  {
+    heldBy: colleagues['Jens Kristensen'],
+    topic: 'CV-skola',
+    date: new Date('2025-04-03'),
+  },
+  {
+    heldBy: colleagues['Georg Sandholm'],
+    topic: 'Erfarenheter kring nopCommerce',
+    date: new Date('2025-03-20'),
+  },
+  {
+    heldBy: colleagues['Eric Björklund'],
+    topic: 'Rundabordsdiskussion AI i jobbet',
+    date: new Date('2025-03-06'),
+  },
+  {
     heldBy: colleagues['Anna Söderström'],
     topic: 'CPMAI Certifiering',
     date: new Date('2025-02-13'),
@@ -31,12 +51,6 @@ export const events: TTTEvent[] = [
     note: 'helst senare än 10 feb',
   },
   {
-    heldBy: colleagues['Jens Kristensen'],
-    topic: 'CV-skola',
-    date: null,
-    note: 'helst senare än 10 feb',
-  },
-  {
     heldBy: colleagues['Henrik Bergdahl'],
     topic: 'Det ultimata kravet, hur ser det ut?',
     date: null,
@@ -58,11 +72,6 @@ export const events: TTTEvent[] = [
     topic: '"Bli snäll och rik"',
     date: null,
     note: 'Tidigast i mars',
-  },
-  {
-    heldBy: colleagues['Georg Sandholm'],
-    topic: 'Erfarenheter från nopCommerce',
-    date: null,
   },
   {
     heldBy: colleagues['Daniel Persson'],

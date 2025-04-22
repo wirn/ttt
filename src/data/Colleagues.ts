@@ -1,6 +1,14 @@
 import { Colleague } from '../app/model/model';
 
 export const colleagues: Record<string, Colleague> = {
+  'Imtiaz Akhtar': {
+    name: 'Imtiaz Akhtar',
+    image: 'imtiaz-akhtar.webp',
+  },
+  'Magnus Widerberg': {
+    name: 'Magnus Widerberg',
+    image: 'magnus-widerberg.webp',
+  },
   'Anna Söderström': {
     name: 'Anna Söderström',
     image: 'anna-so-derstro-m1.webp',
