@@ -1,11 +1,15 @@
-<div *ngFor="let group of sortedGroups">
-  <h2>{{ group.date }}</h2>
-  <ul>
-    <li *ngFor="let wish of group.wishes">
-      <div>{{ wish.name }}</div>
-      @if(wish?.note){
-      <div class="text-subtle">{{ wish.note }}</div>
+@for (group of sortedGroups; track group) {
+  <div>
+    <h2>{{ group.date }}</h2>
+    <ul>
+      @for (wish of group.wishes; track wish) {
+        <li>
+          <div>{{ wish.name }}</div>
+          @if(wish?.note){
+            <div class="text-subtle">{{ wish.note }}</div>
+          }
+        </li>
       }
-    </li>
-  </ul>
-</div>
+    </ul>
+  </div>
+}

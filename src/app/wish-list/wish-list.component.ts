@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { Wish } from '../model/model';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-wish-list',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './wish-list.component.html',
   styleUrl: './wish-list.component.scss',
 })
