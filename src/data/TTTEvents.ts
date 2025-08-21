@@ -3,6 +3,16 @@ import { colleagues } from './Colleagues';
 
 export const events: TTTEvent[] = [
   {
+    heldBy: colleagues['Daniel Persson'],
+    topic: 'Structs och performance i C#',
+    date: new Date('2025-05-20'),
+  },
+  {
+    heldBy: colleagues['Robert Karlsson'],
+    topic: 'Introduktion till Daana',
+    date: new Date('2025-05-08'),
+  },
+  {
     heldBy: colleagues['Imtiaz Akhtar'],
     topic: 'Infrastructure as Code',
     date: new Date('2025-04-10'),
@@ -48,48 +58,42 @@ export const events: TTTEvent[] = [
     heldBy: colleagues['Jens Kristensen'],
     topic: 'Speeddating med företag, hur går det till?',
     date: null,
-    note: 'helst senare än 10 feb',
+    note: '',
   },
   {
     heldBy: colleagues['Henrik Bergdahl'],
     topic: 'Det ultimata kravet, hur ser det ut?',
     date: null,
-    note: 'I vår nån gång',
+    note: '',
   },
   {
     heldBy: colleagues['Henrik Bergdahl'],
     topic: 'Workshop, "Mitt bästa collaboration tips"',
     date: null,
-    note: 'I vår nån gång',
+    note: '',
   },
   {
     heldBy: colleagues['Tomasz Czekierda'],
     topic: 'API Management, Micro Frontend',
-    date: null,
+    date: new Date('2025-09-25'),
   },
   {
     heldBy: colleagues['Mikaela Kurtson Bellman'],
-    topic: '"Bli snäll och rik"',
-    date: null,
-    note: 'Tidigast i mars',
+    topic: '"Bli snäll, lyckad och kanske rik"',
+    date: new Date('2025-09-11'),
+    note: '',
   },
   {
     heldBy: colleagues['Daniel Persson'],
     topic: '.NET Blazor',
     date: null,
-    note: 'Tidigast i mars',
-  },
-  {
-    heldBy: colleagues['Daniel Persson'],
-    topic: 'Structs och performance i C#',
-    date: null,
-    note: 'Tidigast i mars',
+    note: 'verkar inte så pepp på ämnet',
   },
   {
     heldBy: colleagues['Daniel Persson'],
     topic: 'Microsoft Learn - Lärande och certifieringar',
     date: null,
-    note: 'Tidigast i mars',
+    note: '',
   },
   {
     heldBy: colleagues['Ludvig Stenström'],
