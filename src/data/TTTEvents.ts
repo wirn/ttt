@@ -3,14 +3,56 @@ import { colleagues } from './Colleagues';
 
 export const events: TTTEvent[] = [
   {
+    heldBy: colleagues['Anna Söderström'],
+    topic: 'Etisk AI',
+    date: null,
+    note: 'I slutet av kursen, mars?',
+  },
+  {
+    heldBy: colleagues['Anna Söderström'],
+    topic: 'AI Terminologi för alla',
+    date: null,
+    note: 'I slutet av kursen, mars?',
+  },
+  {
+    heldBy: colleagues['Anna Söderström'],
+    topic: 'Volontärarbete på PMI',
+    date: null,
+  },
+  {
+    heldBy: colleagues['Jens Kristensen'],
+    topic: 'Speeddating med företag, hur går det till?',
+    date: null,
+    note: '',
+  },
+  {
+    heldBy: colleagues['Henrik Bergdahl'],
+    topic: 'Det ultimata kravet, hur ser det ut?',
+    date: null,
+    note: '',
+  },
+  {
+    heldBy: colleagues['Henrik Bergdahl'],
+    topic: 'Workshop, "Mitt bästa collaboration tips"',
+    date: null,
+    note: '',
+  },
+  {
+    heldBy: colleagues['Daniel Persson'],
+    topic: '.NET Blazor',
+    date: null,
+    note: 'verkar inte så pepp på ämnet',
+  },
+  {
+    heldBy: colleagues['Daniel Persson'],
+    topic: 'Microsoft Learn - Lärande och certifieringar',
+    date: null,
+    note: '',
+  },
+  {
     heldBy: colleagues['Johan Stålnacke'],
     topic: 'Hur man hackar sin kaffemaskin med hjälp av AI',
     date: new Date('2025-10-09'),
-  },
-  {
-    heldBy: colleagues['Tomasz Czekierda'],
-    topic: 'API Management, Micro Frontend',
-    date: new Date('2025-09-25'),
   },
   {
     heldBy: colleagues['Daniel Persson'],
@@ -47,41 +89,7 @@ export const events: TTTEvent[] = [
     topic: 'CPMAI Certifiering',
     date: new Date('2025-02-13'),
   },
-  {
-    heldBy: colleagues['Anna Söderström'],
-    topic: 'Etisk AI',
-    date: null,
-    note: 'I slutet av kursen, mars?',
-  },
-  {
-    heldBy: colleagues['Anna Söderström'],
-    topic: 'AI Terminologi för alla',
-    date: null,
-    note: 'I slutet av kursen, mars?',
-  },
-  {
-    heldBy: colleagues['Anna Söderström'],
-    topic: 'Volontärarbete på PMI',
-    date: null,
-  },
-  {
-    heldBy: colleagues['Jens Kristensen'],
-    topic: 'Speeddating med företag, hur går det till?',
-    date: null,
-    note: '',
-  },
-  {
-    heldBy: colleagues['Henrik Bergdahl'],
-    topic: 'Det ultimata kravet, hur ser det ut?',
-    date: null,
-    note: '',
-  },
-  {
-    heldBy: colleagues['Henrik Bergdahl'],
-    topic: 'Workshop, "Mitt bästa collaboration tips"',
-    date: null,
-    note: '',
-  },
+
   {
     heldBy: colleagues['Tomasz Czekierda'],
     topic: 'API Management, Micro Frontend',
@@ -93,18 +101,7 @@ export const events: TTTEvent[] = [
     date: new Date('2025-09-11'),
     note: '',
   },
-  {
-    heldBy: colleagues['Daniel Persson'],
-    topic: '.NET Blazor',
-    date: null,
-    note: 'verkar inte så pepp på ämnet',
-  },
-  {
-    heldBy: colleagues['Daniel Persson'],
-    topic: 'Microsoft Learn - Lärande och certifieringar',
-    date: null,
-    note: '',
-  },
+
   {
     heldBy: colleagues['Ludvig Stenström'],
     topic: 'Exercism, Kompetensutveckling i hanterbar storlek',
