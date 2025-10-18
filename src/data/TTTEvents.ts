@@ -3,6 +3,16 @@ import { colleagues } from './Colleagues';
 
 export const events: TTTEvent[] = [
   {
+    heldBy: colleagues['Johan Stålnacke'],
+    topic: 'Hur man hackar sin kaffemaskin med hjälp av AI',
+    date: new Date('2025-10-09'),
+  },
+  {
+    heldBy: colleagues['Tomasz Czekierda'],
+    topic: 'API Management, Micro Frontend',
+    date: new Date('2025-09-25'),
+  },
+  {
     heldBy: colleagues['Daniel Persson'],
     topic: 'Structs och performance i C#',
     date: new Date('2025-05-20'),
