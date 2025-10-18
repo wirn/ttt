@@ -23,6 +23,16 @@ export class AppComponent {
     (event) => event.date && new Date(event.date) < this.today
   );
 
+  public pastEventsSinceLast = this.tttEvents.filter((event) => {
+    if (!event.date) return false;
+    const eventTime =
+      event.date instanceof Date
+        ? event.date.getTime()
+        : new Date(event.date as any).getTime();
+    const since = new Date('2024-08-01').getTime();
+    return eventTime > since && eventTime < this.today.getTime();
+  });
+
   public upcomingEvents = this.tttEvents.filter(
     (event) => !event.date || new Date(event.date) >= this.today
   );
