@@ -3,6 +3,35 @@ import { colleagues } from './Colleagues';
 
 export const events: TTTEvent[] = [
   {
+    heldBy: colleagues['Anton Täcklind'],
+    topic:
+      'n8n - ett ramverk/verktyg för att automatisera/skapa pipelines mellan olika tjänster',
+    date: null,
+    note: 'om några veckor',
+  },
+
+  {
+    heldBy: colleagues['Tomasz Czekierda'],
+    topic: 'React Native + Reeniuneted',
+    date: null,
+  },
+  {
+    heldBy: colleagues['Tomasz Czekierda'],
+    topic: 'Golfens workflow på frontend',
+    date: null,
+  },
+  {
+    heldBy: colleagues['Tomasz Czekierda'],
+    topic: 'Kan hitta på nåt ny teknik',
+    date: null,
+    note: '?',
+  },
+  {
+    heldBy: colleagues['Mattias Malmqvist'],
+    topic: 'Vue Validate',
+    date: null,
+  },
+  {
     heldBy: colleagues['Anna Söderström'],
     topic: 'Etisk AI',
     date: null,
@@ -29,7 +58,7 @@ export const events: TTTEvent[] = [
     heldBy: colleagues['Henrik Bergdahl'],
     topic: 'Det ultimata kravet, hur ser det ut?',
     date: null,
-    note: '',
+    note: '22a okt, sa att han kan ta det',
   },
   {
     heldBy: colleagues['Henrik Bergdahl'],
@@ -37,6 +66,18 @@ export const events: TTTEvent[] = [
     date: null,
     note: '',
   },
+  {
+    heldBy: colleagues['Daniel Persson'],
+    topic: 'Kod/arbetsval hos olika kunder',
+    date: null,
+  },
+
+  {
+    heldBy: colleagues['Daniel Persson'],
+    topic: 'Sidekick, hur introducera sidekicks i en uppdrag',
+    date: null,
+  },
+
   {
     heldBy: colleagues['Daniel Persson'],
     topic: '.NET Blazor',
@@ -49,9 +90,22 @@ export const events: TTTEvent[] = [
     date: null,
     note: '',
   },
+
+  {
+    heldBy: colleagues['Lina Björklund'],
+    topic: 'Vad fan ska vi med AI till',
+    date: null,
+    note: '',
+  },
+  {
+    heldBy: colleagues['Yashaswini Seeta'],
+    topic: 'A first look at Boomi',
+    date: new Date('2025-10-23'),
+    note: '',
+  },
   {
     heldBy: colleagues['Johan Stålnacke'],
-    topic: 'Hur man hackar sin kaffemaskin med hjälp av AI',
+    topic: 'Hacka kaffemaskin med hjälp av AI',
     date: new Date('2025-10-09'),
   },
   {
@@ -98,7 +152,7 @@ export const events: TTTEvent[] = [
   {
     heldBy: colleagues['Mikaela Kurtson Bellman'],
     topic: '"Bli snäll, lyckad och kanske rik"',
-    date: new Date('2025-09-11'),
+    date: null, //new Date('2025-09-11'),
     note: '',
   },
 

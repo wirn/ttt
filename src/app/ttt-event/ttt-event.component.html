@@ -1,22 +1,22 @@
 <div class="card-wrapper">
   @for (event of tttEvents; track event) {
-    <div class="card">
-      @if(event?.heldBy?.image){
-        <img class="card-img-top" [src]="'assets/' + event.heldBy.image" />
-      }
-      <div class="card-body">
-        <h5 class="card-title">{{ event.heldBy.name }}</h5>
-        <p class="card-text">
-          {{ event.topic }}
-        </p>
-        <p class="text-subtle">
-          {{ event.date | date : "yy-MM-dd" }}
-        </p>
-        <p class="text-subtle">
-          {{ event.note }}
-        </p>
-      </div>
+  <div class="card">
+    @if(event?.heldBy?.image){
+    <img class="card-img-top" [src]="'assets/' + event.heldBy.image" />
+    }
+    <div class="card-body">
+      <h5 class="card-title">{{ event.heldBy.name }}</h5>
+      <p class="card-text">
+        {{ event.topic }}
+      </p>
+      <p class="text-subtle mb-0">
+        {{ event.date | date : "yy-MM-dd" }}
+      </p>
+      <p class="text-subtle">
+        {{ event.note }}
+      </p>
     </div>
+  </div>
   }
 </div>
 <p class="text-subtle">Antal: {{ tttEvents.length }}</p>

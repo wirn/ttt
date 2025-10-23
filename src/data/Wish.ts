@@ -1,6 +1,18 @@
 import { Wish } from '../app/model/model';
 
 export const wish: Wish[] = [
+  { name: 'Entity framwork vs Dapper', date: new Date('2025-10-22') },
+  { name: 'Bootstrap vs egen css', date: new Date('2025-10-22') },
+  { name: 'vite', date: new Date('2025-10-22') },
+  { name: 'Säker kodning', date: new Date('2025-10-22') },
+  { name: 'vue vs react', date: new Date('2025-10-22') },
+  { name: 'Open AI Agens Builder el likn', date: new Date('2025-10-22') },
+  {
+    name: 'Gratis verktyg/platformar mm för hobby projekt',
+    date: new Date('2025-10-22'),
+  },
+  { name: 'Vibe codeing live', date: new Date('2025-10-22') },
+
   { name: 'Devin – AI Tool', date: new Date('2025-01-28') },
   { name: 'AVD, i stället för laptop', date: new Date('2025-01-28') },
   { name: 'Deep seek', date: new Date('2025-01-28') },

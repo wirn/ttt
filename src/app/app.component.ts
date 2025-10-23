@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
 import { events } from '../data/TTTEvents';
 import { TTTEvent, Wish } from './model/model';
 import { TttEventComponent } from './ttt-event/ttt-event.component';

@@ -1,0 +1,70 @@
+
+$space-base: 0.25rem !default; 
+@use 'sass:map';
+$space-scale: (
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 4,   
+  4: 6,  
+  5: 12,  
+  auto: auto
+) !default;
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+
+@function space-val($key) {
+  $mult: map.get($space-scale, $key);
+  @if $mult == auto { @return auto; }
+  @return calc(#{$space-base} * #{$mult});
+}
+
+@mixin gen-classes($abbr, $props, $allow-auto: false, $bp-prefix: "") {
+  @each $key, $val in $space-scale {
+    @if $key == auto and $allow-auto == false {
+      @continue;
+    }
+    .#{$abbr}#{$bp-prefix}-#{$key} {
+      @each $prop in $props {
+        #{$prop}: space-val($key) !important;
+      }
+    }
+  }
+}
+
+@mixin gen-spacing($bp-prefix: "") {
+
+  @include gen-classes(m,  (margin),                           true,  $bp-prefix);
+  @include gen-classes(mx, (margin-left, margin-right),        true,  $bp-prefix);
+  @include gen-classes(my, (margin-top,  margin-bottom),       true,  $bp-prefix);
+  @include gen-classes(mt, (margin-top),                       true,  $bp-prefix);
+  @include gen-classes(me, (margin-right),                     true,  $bp-prefix);
+  @include gen-classes(mb, (margin-bottom),                    true,  $bp-prefix);
+  @include gen-classes(ms, (margin-left),                      true,  $bp-prefix);
+
+
+  @include gen-classes(p,  (padding),                          false, $bp-prefix);
+  @include gen-classes(px, (padding-left, padding-right),      false, $bp-prefix);
+  @include gen-classes(py, (padding-top,  padding-bottom),     false, $bp-prefix);
+  @include gen-classes(pt, (padding-top),                      false, $bp-prefix);
+  @include gen-classes(pe, (padding-right),                    false, $bp-prefix);
+  @include gen-classes(pb, (padding-bottom),                   false, $bp-prefix);
+  @include gen-classes(ps, (padding-left),                     false, $bp-prefix);
+}
+
+
+@include gen-spacing();
+
+
+@each $name, $min in $breakpoints {
+  @media (min-width: #{$min}) {
+    @include gen-spacing("-#{$name}");
+  }
+}
