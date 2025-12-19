@@ -9,7 +9,6 @@ export const events: TTTEvent[] = [
     date: null,
     note: 'om några veckor',
   },
-
   {
     heldBy: colleagues['Tomasz Czekierda'],
     topic: 'React Native + Reeniuneted',
@@ -33,12 +32,6 @@ export const events: TTTEvent[] = [
   },
   {
     heldBy: colleagues['Anna Söderström'],
-    topic: 'Etisk AI',
-    date: null,
-    note: 'I slutet av kursen, mars?',
-  },
-  {
-    heldBy: colleagues['Anna Söderström'],
     topic: 'AI Terminologi för alla',
     date: null,
     note: 'I slutet av kursen, mars?',
@@ -55,10 +48,15 @@ export const events: TTTEvent[] = [
     note: '',
   },
   {
+    heldBy: colleagues['Anna Söderström'],
+    topic: 'Genomgång av vad en AI-modell är',
+    date: new Date('2025-12-16'),
+    note: 'I slutet av kursen, mars?',
+  },
+  {
     heldBy: colleagues['Henrik Bergdahl'],
     topic: 'Det ultimata kravet, hur ser det ut?',
-    date: null,
-    note: '22a okt, sa att han kan ta det',
+    date: new Date('2025-11-27'),
   },
   {
     heldBy: colleagues['Henrik Bergdahl'],
@@ -94,7 +92,7 @@ export const events: TTTEvent[] = [
   {
     heldBy: colleagues['Lina Björklund'],
     topic: 'Vad fan ska vi med AI till',
-    date: null,
+    date: new Date('2025-12-04'),
     note: '',
   },
   {
@@ -152,7 +150,7 @@ export const events: TTTEvent[] = [
   {
     heldBy: colleagues['Mikaela Kurtson Bellman'],
     topic: '"Bli snäll, lyckad och kanske rik"',
-    date: null, //new Date('2025-09-11'),
+    date: new Date('2025-09-11'),
     note: '',
   },
 
