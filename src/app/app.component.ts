@@ -5,6 +5,7 @@ import { TTTEvent, Wish } from './model/model';
 import { TttEventComponent } from './ttt-event/ttt-event.component';
 import { wish } from '../data/Wish';
 import { WishListComponent } from './wish-list/wish-list.component';
+import { splitEventsByDate } from './model/ttt-event.utils';
 
 @Component({
   selector: 'app-root',
@@ -17,10 +18,9 @@ export class AppComponent {
   public wishList: Wish[] = wish;
 
   private today = new Date();
+  private eventGroups = splitEventsByDate(this.tttEvents, this.today);
 
-  public pastEvents = this.tttEvents.filter(
-    (event) => event.date && new Date(event.date) < this.today
-  );
+  public pastEvents = this.eventGroups.pastEvents;
 
   public pastEventsSinceLast = this.tttEvents.filter((event) => {
     if (!event.date) return false;
@@ -32,7 +32,5 @@ export class AppComponent {
     return eventTime > since && eventTime < this.today.getTime();
   });
 
-  public upcomingEvents = this.tttEvents.filter(
-    (event) => !event.date || new Date(event.date) >= this.today
-  );
+  public upcomingEvents = this.eventGroups.upcomingEvents;
 }
