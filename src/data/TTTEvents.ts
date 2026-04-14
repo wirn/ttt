@@ -3,12 +3,29 @@ import { colleagues } from './Colleagues';
 
 export const events: TTTEvent[] = [
   {
+    heldBy: [colleagues['Emil Hägglöv'], colleagues['Leo Hemmingsson']],
+    topic: 'Ai-driven Orderhantering hos Permobil',
+    date: new Date('2026-03-19'),
+  },
+  {
+    heldBy: colleagues['Daniel Holmström Wikell'],
+    topic: 'Data Factory and what not to use it for',
+    date: new Date('2026-03-05'),
+  },
+  {
     heldBy: colleagues['Anton Täcklind'],
     topic:
-      'n8n - ett ramverk/verktyg för att automatisera/skapa pipelines mellan olika tjänster',
-    date: null,
-    note: 'om några veckor',
+      'n8n, open source lösning för workflows och pipelines mellan tjänster',
+    date: new Date('2026-02-05'),
   },
+
+  {
+    heldBy: colleagues['Georg Sandholm'],
+    topic:
+      ' AI kan användas genom hela utvecklingskedjan – från idé till fungerande applikation',
+    date: new Date('2026-01-29'),
+  },
+
   {
     heldBy: colleagues['Tomasz Czekierda'],
     topic: 'React Native + Reeniuneted',
@@ -54,7 +71,7 @@ export const events: TTTEvent[] = [
     note: 'I slutet av kursen, mars?',
   },
   {
-    heldBy: colleagues['Henrik Bergdahl'],
+    heldBy: [colleagues['Henrik Bergdahl'], colleagues['Emma Henriksson']],
     topic: 'Det ultimata kravet, hur ser det ut?',
     date: new Date('2025-11-27'),
   },

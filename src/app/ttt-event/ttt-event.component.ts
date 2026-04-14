@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { TTTEvent } from '../model/model';
+import { Colleague, TTTEvent } from '../model/model';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -23,5 +23,27 @@ export class TttEventComponent {
 
   get tttEvents(): TTTEvent[] {
     return this._tttEvents;
+  }
+
+  getColleagues(event: TTTEvent): Colleague[] {
+    return Array.isArray(event.heldBy) ? event.heldBy : [event.heldBy];
+  }
+
+  getColleagueNames(event: TTTEvent): string {
+    return this.getColleagues(event)
+      .map((colleague) => colleague.name)
+      .join(', ');
+  }
+
+  getImagePath(colleague: Colleague | undefined): string | null {
+    return colleague?.image ? `assets/${colleague.image}` : null;
+  }
+
+  hasSplitImage(event: TTTEvent): boolean {
+    const colleagues = this.getColleagues(event);
+    return (
+      colleagues.length === 2 &&
+      colleagues.every((colleague) => !!colleague.image)
+    );
   }
 }

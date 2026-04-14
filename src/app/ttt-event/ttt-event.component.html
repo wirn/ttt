@@ -1,11 +1,26 @@
 <div class="card-wrapper">
   @for (event of tttEvents; track event) {
   <div class="card">
-    @if(event?.heldBy?.image){
-    <img class="card-img-top" [src]="'assets/' + event.heldBy.image" />
+    @if (hasSplitImage(event)) {
+      <div class="card-img-top card-img-top--split">
+        <div
+          class="card-img-split card-img-split--primary"
+          [style.background-image]="'url(' + getImagePath(getColleagues(event)[0]) + ')'"
+        ></div>
+        <div
+          class="card-img-split card-img-split--secondary"
+          [style.background-image]="'url(' + getImagePath(getColleagues(event)[1]) + ')'"
+        ></div>
+      </div>
+    } @else if (getImagePath(getColleagues(event)[0])) {
+      <img
+        class="card-img-top"
+        [src]="getImagePath(getColleagues(event)[0])!"
+        [alt]="getColleagueNames(event)"
+      />
     }
     <div class="card-body">
-      <h5 class="card-title">{{ event.heldBy.name }}</h5>
+      <h5 class="card-title">{{ getColleagueNames(event) }}</h5>
       <p class="card-text">
         {{ event.topic }}
       </p>
