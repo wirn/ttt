@@ -1,5 +1,5 @@
 export interface TTTEvent {
-  heldBy: Colleague | Colleague[];
+  heldBy: Colleague[];
   topic: string;
   date: Date | null;
   note?: string;

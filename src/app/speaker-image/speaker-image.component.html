@@ -1,0 +1,14 @@
+@if (hasSplitImage) {
+  <div class="speaker-image speaker-image--split" [attr.aria-label]="alt">
+    <div
+      class="speaker-image__half speaker-image__half--primary"
+      [style.background-image]="'url(' + getImagePath(colleagues[0]) + ')'"
+    ></div>
+    <div
+      class="speaker-image__half speaker-image__half--secondary"
+      [style.background-image]="'url(' + getImagePath(colleagues[1]) + ')'"
+    ></div>
+  </div>
+} @else if (hasSingleImage) {
+  <img class="speaker-image" [src]="getImagePath(colleagues[0])!" [alt]="alt" />
+}

@@ -1,0 +1,25 @@
+.speaker-image {
+  aspect-ratio: 4 / 3;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.speaker-image--split {
+  position: relative;
+}
+
+.speaker-image__half {
+  background-position: center;
+  background-size: cover;
+  inset: 0;
+  position: absolute;
+}
+
+.speaker-image__half--primary {
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.speaker-image__half--secondary {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}

@@ -1,7 +1,11 @@
-import { TTTEvent } from '../app/model/model';
+import { Colleague, TTTEvent } from '../app/model/model';
 import { colleagues } from './Colleagues';
 
-export const events: TTTEvent[] = [
+type LegacyEvent = Omit<TTTEvent, 'heldBy'> & {
+  heldBy: Colleague | Colleague[];
+};
+
+const rawEvents: LegacyEvent[] = [
   {
     heldBy: [colleagues['Emil Hägglöv'], colleagues['Leo Hemmingsson']],
     topic: 'Ai-driven Orderhantering hos Permobil',
@@ -342,3 +346,8 @@ export const events: TTTEvent[] = [
     date: new Date('2022-12-01'),
   },
 ];
+
+export const events: TTTEvent[] = rawEvents.map((event) => ({
+  ...event,
+  heldBy: Array.isArray(event.heldBy) ? event.heldBy : [event.heldBy],
+}));

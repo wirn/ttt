@@ -16,27 +16,5 @@
   }
 }
 .card-img-top {
-  aspect-ratio: 4 / 3;
-  display: block;
-  object-fit: cover;
   width: 100%;
-}
-
-.card-img-top--split {
-  position: relative;
-}
-
-.card-img-split {
-  background-position: center;
-  background-size: cover;
-  inset: 0;
-  position: absolute;
-}
-
-.card-img-split--primary {
-  clip-path: polygon(0 0, 100% 0, 0 100%);
-}
-
-.card-img-split--secondary {
-  clip-path: polygon(100% 0, 100% 100%, 0 100%);
 }
